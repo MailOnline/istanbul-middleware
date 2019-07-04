@@ -3,12 +3,18 @@
   "version": "0.0.0",
   "description": "Test app for istanbul middleware",
   "dependencies": {
-      "express": "4.x",
-      "body-parser": "~1.4.3",
-      "hbs": ">=1.0.2",
-      "istanbul-middleware": "*",
-      "nopt": "*"
-  }
+    "express": "4.x",
+    "body-parser": "~1.4.3",
+    "hbs": ">=1.0.2",
+    "istanbul-middleware": "*",
+    "nopt": "*",
+    "snyk": "^1.189.0"
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
 
 
